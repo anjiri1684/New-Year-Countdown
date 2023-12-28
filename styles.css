@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600&family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://c.tadst.com/gfx/tzmap/worldclockcities.png?8507);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+.heading {
+    text-align: center;
+    color: rgb(103, 4, 4);
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.container {
+    display: grid;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: rgb(103, 4, 4);
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+.box-time h2 {
+    font-size: 2.5rem;
+}
+
+.box-time p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .box-time p {
+        margin-bottom: 40px;
+    }
+}
